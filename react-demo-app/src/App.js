@@ -24,6 +24,11 @@ const content = [
     "Imperative Programming: You define all the steps needed to achieve a result",
     "React on the other hand embraces declarative programming",
     "With React, you define the goal and React figures out how to get there"
+  ],
+  [
+    "Airplanes are cool",
+    "People are stupid",
+    "Code makes sense"
   ]
 ];
 
@@ -59,6 +64,12 @@ export default function App() {
             onClick={() => setActiveContentIndex(2)}
           >
             Related Resources
+          </button>
+          <button
+            className={activeContentIndex === 4 ? "active" : ""}
+            onClick={() => setActiveContentIndex(4)}
+          >
+            Interesting Facts
           </button>
         </menu>
         <div id="tab-content">
