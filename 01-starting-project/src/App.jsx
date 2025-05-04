@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import { CORE_CONCEPTS } from "./data.js";
 import Header from "./components/Header/Header.jsx";
 import CoreConcept from "./components/CoreConcept/CoreConcept.jsx";
@@ -13,8 +12,10 @@ function App() {
     setSelectedTopic(selectedButton);
   }
 
+  // initial content to be displayed under TabButton
   let tabContent = <p>Please select a topic</p>;
 
+  // dynamic content to be displayed after a TabButton is selected
   if (selectedTopic) {
     tabContent = (
       <div id="tab-content">
