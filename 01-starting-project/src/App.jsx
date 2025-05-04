@@ -37,6 +37,7 @@ function App() {
           <ul>
             {CORE_CONCEPTS.map((conceptItem) => (
               <CoreConcept
+                key={conceptItem.title}
                 title={conceptItem.title}
                 description={conceptItem.description}
                 img={conceptItem.image}
