@@ -1,12 +1,12 @@
 import Header from "./components/Header";
-import Calculator from "./components/Calculator";
+import UserInput from "./components/UserInput";
 
 function App() {
   return (
-    <div>
+    <>
       <Header />
-      <Calculator />
-    </div>
+      <UserInput />
+    </>
   );
 }
 
