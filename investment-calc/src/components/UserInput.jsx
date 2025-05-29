@@ -22,7 +22,7 @@ export default function UserInput({ onInputChange, dataInput }) {
             step="1"
             value={dataInput.annualInvestment}
             onChange={(event) =>
-              onInputChange("annualIvestment", event.target.value)
+              onInputChange("annualInvestment", event.target.value)
             }
           />
         </p>
